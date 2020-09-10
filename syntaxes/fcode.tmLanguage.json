@@ -3,46 +3,27 @@
 	"name": "fabrica.ai fcode",
 	"patterns": [
 		{
-			"include": "#keywords"
+			"name": "keyword.control.fcode",
+			"match": "\\b(gc|gr|sc|sr|lc|lr|delay|wait)\\b"
+		},
+		{
+			"name":"constant.language.fcode",
+			"match": "\\b(home|disable)\\b"
+		},
+		{
+			"name":"constant.numeric.fcode",
+			"match": "[+-]?([0-9]*[.])?[0-9]+"
+		},
+		{
+			"name": "comment", 
+			"begin": "#",
+			"end": "\n"
 		},
 		{
 			"include": "#strings"
-		},
-		{
-			"include": "#comment"
 		}
 	],
 	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.fcode",
-				"match": "\\b(gc|gr|sc|sr|lc|lr)\\b"
-			}]
-		},
-		"gantry": {
-			"patterns": [{
-				"name": "keyword.control.fcode",
-				"match": "\\b(gc|gr)\\b"
-			}]
-		},
-		"servos": {
-			"patterns": [{
-				"name": "servo.control.fcode",
-				"match": "\\b(sc|sr)\\b"
-			}]
-		},
-		"led": {
-			"patterns": [{
-				"name": "led.control.fcode",
-				"match": "\\b(lc|lr)\\b"
-			}]
-		},
-		"others": {
-			"patterns": [{
-				"name": "other.control.fcode",
-				"match": "\\b(wait|delay)\\b"
-			}]
-		},
 		"strings": {
 			"name": "string.quoted.double.fcode",
 			"begin": "\"",
@@ -53,11 +34,6 @@
 					"match": "\\\\."
 				}
 			]
-		},
-		"comment": {
-			"name": "comment", 
-			"begin": "#",
-			"end": "\n"
 		}
 	},
 	"scopeName": "source.fcode"
