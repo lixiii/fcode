@@ -3,8 +3,16 @@
 	"name": "fabrica.ai fcode",
 	"patterns": [
 		{
+			"name": "entity.name.function.fcode",
+			"match": "\\b(gc|gr|lc|lr)\\b"
+		},
+		{
+			"name": "entity.name.tag.fcode",
+			"match": "\\b(sc|sr)\\b"
+		},
+		{
 			"name": "keyword.control.fcode",
-			"match": "\\b(gc|gr|sc|sr|lc|lr|delay|wait|ack)\\b"
+			"match": "\\b(delay|wait|ack)\\b"
 		},
 		{
 			"name":"constant.language.fcode",
