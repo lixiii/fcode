@@ -4,7 +4,7 @@
 	"patterns": [
 		{
 			"name": "keyword.control.fcode",
-			"match": "\\b(gc|gr|sc|sr|lc|lr|delay|wait)\\b"
+			"match": "\\b(gc|gr|sc|sr|lc|lr|delay|wait|ack)\\b"
 		},
 		{
 			"name":"constant.language.fcode",
