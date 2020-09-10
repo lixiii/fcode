@@ -1,0 +1,25 @@
+{
+    "name": "fabrica-ai-fcode",
+    "displayName": "fabrica.ai fcode",
+    "description": "Language support for fabrica.ai fcode files",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.48.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "fcode",
+            "aliases": ["fabrica.ai fcode", "fcode"],
+            "extensions": [".fcode"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "fcode",
+            "scopeName": "source.fcode",
+            "path": "./syntaxes/fcode.tmLanguage.json"
+        }]
+    }
+}
