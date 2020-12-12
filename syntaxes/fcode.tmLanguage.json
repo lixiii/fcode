@@ -4,15 +4,15 @@
 	"patterns": [
 		{
 			"name": "entity.name.function.fcode",
-			"match": "\\b(gc|gr|lc|lr)\\b"
+			"match": "\\b(c)\\b"
 		},
 		{
 			"name": "entity.name.tag.fcode",
-			"match": "\\b(sc|sr)\\b"
+			"match": "\\b(f)\\b"
 		},
 		{
 			"name": "keyword.control.fcode",
-			"match": "\\b(delay|wait|ack)\\b"
+			"match": "\\b(delay|wait)\\b"
 		},
 		{
 			"name":"constant.language.fcode",
